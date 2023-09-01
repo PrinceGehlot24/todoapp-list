@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <title>TodoApp List</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Nunito Sans', sans-serif;
+            padding-top: 50px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6
+        {
+                font-family: 'Raleway', sans-serif; 
+        }
+
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
