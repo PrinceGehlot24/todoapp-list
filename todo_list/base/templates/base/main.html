@@ -9,7 +9,7 @@
     <title>TodoApp List</title>
     <style>
         body{
-            background-color: aqua;
+            background-color: #2962ff;
             font-family: 'Nunito Sans', sans-serif;
             padding-top: 50px;
         }
@@ -26,10 +26,268 @@
 
 
         .container{
-            max-width: 550px;
+            max-width: 500px;
             margin: auto;
             background-color: #fff;
             box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        .login-main h1{
+            padding: 10px 15px ;
+            border-bottom: 1px solid #6a6666;
+            color: #6a6666;
+        }
+
+        .login-form{
+            padding: 0px 5px;
+        }
+
+        .login-form p{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form label{
+            padding: 5px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .login-form input{
+            margin: 10px 6px;
+            padding: 6px;
+            font-size: 18px;
+        }
+        .login-form input[type="submit"]{
+            margin: 10px 6px;
+            padding: 10px 6px;
+            font-size: 18px;
+            background-color: #2962ff;
+            width: 150px;
+            border-radius: 5px;
+            border: 1px solid #6a6666;
+            color: white;
+            text-transform: capitalize;
+
+            &:hover{
+                background-color: white;
+                color: #2962ff;
+                cursor: pointer;
+            }
+        }
+
+        a:-webkit-any-link {
+            cursor: pointer;
+            color: #2962ff;
+            text-decoration: none;}
+
+        .helptext{
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+        .todo-app{
+            padding: 0px 10px;
+        }
+        .todo-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .todo-header .btn {
+            border: 1px solid #2962ff;;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #2962ff;
+            & a{
+                color: #2962ff;
+                text-decoration: none;
+                
+            }
+        }
+        .todo-header .heading{
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .todo-header .heading span {
+            color: #2962ff;
+        }
+
+        .todo-body .heading{
+            text-transform: capitalize;
+            display: flex;
+            justify-content: space-between;
+            color: #6a6666;
+            & a{
+                background-color: #5fc65f;
+                color: #fff;
+                text-decoration: none;
+                border: 1px solid #5fc65f;
+                padding: 5px 15px ;
+                border-radius: 5px;
+            }
+        }
+
+        .search-bar input[type="text"]{
+            width: 330px;
+            padding: 5px;
+        }
+
+        .search-bar input[type="submit"]{
+            margin-left: 30px;
+            width: 100px;
+            padding: 5px;
+            cursor: pointer;
+            color: #2962ff;
+            border: 1px solid #2962ff;
+            border-radius: 2px;
+        }
+
+        .table{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            min-height: 300px;
+            border: 1px solid  rgb(200, 200, 200);
+            border-radius: 5px;
+        }
+
+        .table .btn-edit a{
+            border: 1px solid #5fc65f;
+            padding: 3px 10px;
+            color: #5fc65f;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .table .btn-del a{
+            border: 1px solid red;
+            padding: 3px 10px;
+            color: red;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .table .empty h3 {
+            text-align: center;
+            color: #6a6666;
+        }
+
+        table {
+            border-collapse: collapse;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            color: #6a6666;
+            border-radius: 5px;
+            }
+
+            td,
+            th {
+            border: 1px solid  rgb(200, 200, 200);
+            padding: 10px;
+            }
+
+
+
+        .row{
+                border-bottom: #6a6666;
+            }
+
+
+        .todo-body .table .col-1 {
+            width: 500px;
+            padding: 8px;
+            text-transform: capitalize;
+            padding-left: 15px;
+        }
+
+        .todo-body .table .col-2 {
+            width: 100px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .delete-page .header a{
+            border: 1px solid #2962ff;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 5px 10px;
+            width: 100px;
+        }
+
+        .delete-page .header {
+            margin-top: 10px;
+            border-bottom: 1px solid #6a6666;
+            height: 40px;
+        }
+
+        .delete-page .body input{
+            border: 1px solid red;
+            color: #fff;
+            background-color: red;
+            padding: 7px 10px;
+            border-radius: 5px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .task-header{
+            margin-top: 10px;
+            border-bottom: 1px solid #6a6666;
+        }
+
+        .task-header a{
+            border: 1px solid #2962ff;
+            color: #2962ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .task-header .center {
+            display: flex;
+            justify-content: center;
+            color: #6a6666;
+
+        }
+
+        .task-form{
+            padding: 0px 5px;
+        }
+
+        .task-form p{
+            display: flex;
+            flex-direction: column;
+        }
+        .task-form label{
+            padding: 5px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .task-form input{
+            margin: 10px 6px;
+            padding: 6px;
+            font-size: 18px;
+        }
+        .task-form input[type="submit"]{
+            margin: 10px 6px;
+            padding: 10px 6px;
+            font-size: 18px;
+            background-color: #2962ff;
+            width: 150px;
+            border-radius: 5px;
+            border: 1px solid #6a6666;
+            color: white;
+            text-transform: capitalize;
+
+            &:hover{
+                background-color: white;
+                color: #2962ff;
+                cursor: pointer;
+            }
+        }
+
+        #id_complete{
+            width: fit-content;
         }
     </style>
 </head>
