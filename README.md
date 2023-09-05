@@ -1,17 +1,14 @@
 
 # TodoApp List Project
 
- This is an e-commerce project dedicated to electronic gadgets, covering mobile phones, laptops, tablets, and accessories. It offers a user-friendly experience, with features like user registration, product browsing, filtering, sorting, cart management, secure billing, and smooth payment processing.
+ This Django-based Todo app provides a user-friendly platform for task management and organization. With features like user registration and multiple user login, you can easily collaborate on tasks and stay organized. The app allows users to create, edit, and delete tasks, ensuring flexibility in task management. Additionally, the sorting feature helps you prioritize your tasks effectively.
 
  ## Features
 
-- User registration and authentication system.
-- With a password change and forgot password functionality.
-- Browse and search products conveniently.
-- Add products to the shopping cart for a streamlined checkout process.
-- Secure payment processing with integrated payment gateways.
-- Product and inventory management.
-- Built using technologies such as Django, Python, HTML, CSS, JavaScript, and more.
+- User registration and multiple user login support.
+- Create, edit, and delete tasks effortlessly.
+- Prioritize and organize tasks using the sorting feature.
+- Built with Django for a robust and secure task management solution.
 
 
 ## Run Locally
